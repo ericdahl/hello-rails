@@ -1,0 +1,13 @@
+services:
+  blog:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/app
+    environment:
+      - SECRET_KEY_BASE
+      - RAILS_ENV=development
+      - BINDING=0.0.0.0
+    tty: true
+#    entrypoint: /bin/bash
