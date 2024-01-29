@@ -6,7 +6,7 @@ services:
     volumes:
       - ./app:/app
     environment:
-      - SECRET_KEY_BASE
+      - SECRET_KEY_BASE=demo
       - RAILS_ENV=development
       - BINDING=0.0.0.0
     tty: true
